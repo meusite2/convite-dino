@@ -42,8 +42,8 @@
             margin-bottom: 50px;     
     }
         .card{
-            width: 27rem;
-            height: 30rem;
+            width: 25rem;
+            height: 35rem;
             border: none;
             border-radius: 20px;
             color: #000000;
@@ -52,16 +52,16 @@
             flex: 0 1 auto;        
         }
         .img-fundo{
-            width: 24rem;
+            width: 22rem;
             height: 27.5rem;
 
         }
         .img6{
             margin-top: -15.7rem;
-            margin-left: 8.9rem;         
+            margin-left: 2.9rem;         
         /*animation: pulse 1s infinite;*/
             animation: pulse 1s infinite;
-            transform: scale(0.6); /* Reduz o tamanho em 20% */ 
+            transform: scale(0.2); /* Reduz o tamanho em 20% */ 
         }
         .icones{
             display: flex;
