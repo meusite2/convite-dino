@@ -90,3 +90,58 @@ article {
         transform: scale(1); /* Retorna à escala original */
     }
 }
+/* Media Queries para Responsividade */
+@media (max-width: 1024px) {
+    .card {
+        width: 80%; /* Reduz a largura para 80% em telas menores */
+        height: auto; /* Ajusta a altura automaticamente */
+    }
+
+    .img-fundo {
+        width: 80%; /* Ajusta a largura para 80% */
+        height: auto; /* Mantém a proporção */
+    }
+
+    .img6 {
+        margin-top: -10rem; /* Ajusta o espaço superior */
+        margin-left: auto; /* Centraliza horizontalmente */
+        margin-right: auto; /* Centraliza horizontalmente */
+    }
+
+    .icones img {
+        width: 50px; /* Reduz o tamanho dos ícones */
+    }
+}
+
+@media (max-width: 768px) {
+    article {
+        font-size: 1.2em; /* Reduz o tamanho da fonte em telas pequenas */
+    }
+
+    .cards-container {
+        gap: 15px; /* Diminui o espaço entre os cartões */
+    }
+
+    .icones {
+        flex-direction: column; /* Alterar para coluna em telas menores */
+        gap: 10px; /* Ajusta o espaço entre os ícones */
+    }
+
+    .img6 {
+        transform: scale(0.5); /* Reduz o tamanho em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .img6 {
+        margin-top: -8rem; /* Ajusta o espaço superior */
+    }
+
+    .card {
+        width: 95%; /* Largura quase total em dispositivos menores */
+    }
+
+    .icones img {
+        width: 40px; /* Tamanho menor para ícones */
+    }
+}
