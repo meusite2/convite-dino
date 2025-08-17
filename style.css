@@ -1,147 +1,92 @@
-@charset "UTF-8";
+    @charset "UTF-8";
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; /* Adicionado para melhor controle de padding e border */
-}
-
-body {
-    height: 100vh; /* Garante que o body ocupe a altura total da viewport */
-    display: flex; /* Para centralizar ou controlar o main na página, se necessário */
-    flex-direction: column;
-}
-
-main {
-    display: grid;
-    grid-template-areas:
-        "article article article";
-    grid-template-rows:auto;
-    flex-grow: 1; /* Permite que o main ocupe o espaço restante */
-}
-
-
-
-article {
-    grid-area: article;
-    background-color: #d8ec86c5; /* Cor para o artigo principal */
-    min-height: 400px; /* Altura mínima para o artigo ser visível */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5em;
-    font-weight: bold;
-    border: 1px solid #ccc;
-}
-    .cards-container {
-        display: flex; 
-        flex-wrap: wrap;
-        justify-content: center; 
-        gap: 25px;    
-        margin-top: 50px;
-        margin-bottom: 50px;     
-}
-    .card{
-        width: 38rem;
-        height: 49rem;
-        border: none;
-        border-radius: 20px;
-        color: #000000;
-        padding: 20px 23px 20px 22px;
-        box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
-        flex: 0 1 auto;        
-    }
-    .img-fundo{
-        width: 35rem;
-        height: 46rem;
-
-    }
-    .img6{
-        margin-top: -15.7rem;
-        margin-left: 8.9rem;         
-       /*animation: pulse 1s infinite;*/
-        animation: pulse 1s infinite;
-        transform: scale(0.6); /* Reduz o tamanho em 20% */ 
-    }
-    .icones{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        margin-left: 0rem;
-        gap: 4rem;
-    }
-    .icones img { /* Supondo que os ícones sejam imagens */
-        width: 70px; /* Ajuste para o tamanho desejado */
-        height: auto; /* Mantém a proporção */
-        transform: scale(0.8); /* Reduz o tamanho em 20% */
-        margin-top: -0.4rem;
-    }
-    
-
-    @keyframes pulse {
-    0% {
-        transform: scale(1); /* Escala original */
-    }
-    50% {
-        transform: scale(1.1); /* Aumenta a escala para 110% */
-    }
-    100% {
-        transform: scale(1); /* Retorna à escala original */
-    }
-}
-/* Media Queries para Responsividade */
-@media (max-width: 1024px) {
-    .card {
-        width: 80%; /* Reduz a largura para 80% em telas menores */
-        height: auto; /* Ajusta a altura automaticamente */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box; /* Adicionado para melhor controle de padding e border */
     }
 
-    .img-fundo {
-        width: 80%; /* Ajusta a largura para 80% */
-        height: auto; /* Mantém a proporção */
+    body {
+        height: 100vh; /* Garante que o body ocupe a altura total da viewport */
+        display: flex; /* Para centralizar ou controlar o main na página, se necessário */
+        flex-direction: column;
     }
 
-    .img6 {
-        margin-top: -10rem; /* Ajusta o espaço superior */
-        margin-left: auto; /* Centraliza horizontalmente */
-        margin-right: auto; /* Centraliza horizontalmente */
+    main {
+        display: grid;
+        grid-template-areas:
+            "article article article";
+        grid-template-rows:auto;
+        flex-grow: 1; /* Permite que o main ocupe o espaço restante */
     }
 
-    .icones img {
-        width: 50px; /* Reduz o tamanho dos ícones */
-    }
-}
 
-@media (max-width: 768px) {
+
     article {
-        font-size: 1.2em; /* Reduz o tamanho da fonte em telas pequenas */
+        grid-area: article;
+        background-color: #d8ec86c5; /* Cor para o artigo principal */
+        min-height: 400px; /* Altura mínima para o artigo ser visível */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5em;
+        font-weight: bold;
+        border: 1px solid #ccc;
     }
+        .cards-container {
+            display: flex; 
+            flex-wrap: wrap;
+            justify-content: center; 
+            gap: 25px;    
+            margin-top: 50px;
+            margin-bottom: 50px;     
+    }
+        .card{
+            width: 38rem;
+            height: 49rem;
+            border: none;
+            border-radius: 20px;
+            color: #000000;
+            padding: 20px 23px 20px 22px;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+            flex: 0 1 auto;        
+        }
+        .img-fundo{
+            width: 35rem;
+            height: 46rem;
 
-    .cards-container {
-        gap: 15px; /* Diminui o espaço entre os cartões */
-    }
+        }
+        .img6{
+            margin-top: -15.7rem;
+            margin-left: 8.9rem;         
+        /*animation: pulse 1s infinite;*/
+            animation: pulse 1s infinite;
+            transform: scale(0.6); /* Reduz o tamanho em 20% */ 
+        }
+        .icones{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin-left: 0rem;
+            gap: 4rem;
+        }
+        .icones img { /* Supondo que os ícones sejam imagens */
+            width: 70px; /* Ajuste para o tamanho desejado */
+            height: auto; /* Mantém a proporção */
+            transform: scale(0.8); /* Reduz o tamanho em 20% */
+            margin-top: -0.4rem;
+        }
+        
 
-    .icones {
-        flex-direction: column; /* Alterar para coluna em telas menores */
-        gap: 10px; /* Ajusta o espaço entre os ícones */
+        @keyframes pulse {
+        0% {
+            transform: scale(1); /* Escala original */
+        }
+        50% {
+            transform: scale(1.1); /* Aumenta a escala para 110% */
+        }
+        100% {
+            transform: scale(1); /* Retorna à escala original */
+        }
     }
-
-    .img6 {
-        transform: scale(0.5); /* Reduz o tamanho em telas menores */
-    }
-}
-
-@media (max-width: 480px) {
-    .img6 {
-        margin-top: -8rem; /* Ajusta o espaço superior */
-    }
-
-    .card {
-        width: 95%; /* Largura quase total em dispositivos menores */
-    }
-
-    .icones img {
-        width: 40px; /* Tamanho menor para ícones */
-    }
-}
