@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Adicionado para melhor controle de padding e border */
+}
+
+body {
+    height: 100vh; /* Garante que o body ocupe a altura total da viewport */
+    display: flex; /* Para centralizar ou controlar o main na página, se necessário */
+    flex-direction: column;
+}
+
+main {
+    display: grid;
+    grid-template-areas:
+        "article article article";
+    grid-template-rows:auto;
+    flex-grow: 1; /* Permite que o main ocupe o espaço restante */
+}
+
+
+
+article {
+    grid-area: article;
+    background-color: #d8ec86c5; /* Cor para o artigo principal */
+    min-height: 300px; /* Altura mínima para o artigo ser visível */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    border: 1px solid #ccc;
+}
+    .cards-container {
+        display: flex; 
+        flex-wrap: wrap;
+        justify-content: center; 
+        gap: 25px;         
+}
+    .card{
+        height: 69rem ;
+        width: 38rem;
+        background-image: url(assets/2.png);
+        border: none;
+        border-radius: 20px;
+        color: #000000;
+        padding: 20px 23px 20px 22px;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+        transition: 0.7s ease ;
+        flex: 0 1 auto;        
+    }
+    .card:hover{
+        transform:scale(1.03)
+    }
+    .img6{
+        margin-top: 46rem;
+        margin-left: 11.4rem;
+        animation: pulse 1s infinite; 
+    }
+    .icones{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-left: 6.3rem;
+        gap: 4.5rem;
+    }
+
+    @keyframes pulse {
+    0% {
+        transform: scale(1); /* Escala original */
+    }
+    50% {
+        transform: scale(1.1); /* Aumenta a escala para 110% */
+    }
+    100% {
+        transform: scale(1); /* Retorna à escala original */
+    }
+}
