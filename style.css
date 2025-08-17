@@ -52,16 +52,15 @@
             flex: 0 1 auto;        
         }
         .img-fundo{
-            width: 22rem;
-            height: 27.5rem;
+            width: 22.2rem;
+            height: 32.4rem;
 
         }
         .img6{
-            margin-top: -15.7rem;
-            margin-left: 2.9rem;         
-        /*animation: pulse 1s infinite;*/
-            animation: pulse 1s infinite;
-            transform: scale(0.2); /* Reduz o tamanho em 20% */ 
+            margin-top: -11.5rem;
+            margin-left: 1.7rem;         
+            /*animation: pulse 1s infinite;*/
+            animation: pulse 1.2s infinite;
         }
         .icones{
             display: flex;
@@ -69,24 +68,24 @@
             align-items: center;
             justify-content: center;
             margin-left: 0rem;
-            gap: 4rem;
+            gap: 2.2rem;
         }
         .icones img { /* Supondo que os ícones sejam imagens */
             width: 50px; /* Ajuste para o tamanho desejado */
             height: auto; /* Mantém a proporção */
             transform: scale(0.8); /* Reduz o tamanho em 20% */
-            margin-top: -0.4rem;
+            margin-top: -0.7rem;
         }
         
 
         @keyframes pulse {
         0% {
-            transform: scale(1); /* Escala original */
+            transform: scale(0.6); /* Escala original */
         }
         50% {
-            transform: scale(1.1); /* Aumenta a escala para 110% */
+            transform: scale(0.7); /* Aumenta a escala para 110% */
         }
         100% {
-            transform: scale(1); /* Retorna à escala original */
+            transform: scale(0.6); /* Retorna à escala original */
         }
     }
